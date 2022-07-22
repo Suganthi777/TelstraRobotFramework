@@ -1,99 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.10.2 on win32)" generated="20220413 17:54:22.581" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.10.2 on win32)" generated="20220422 17:35:26.496" rpa="false">
 <suite id="s1" name="AutomaitonRobot" source="C:\Users\user\eclipse-workspace\AutomaitonRobot">
 <suite id="s1-s1" name="Test" source="C:\Users\user\eclipse-workspace\AutomaitonRobot\Test">
-<suite id="s1-s1-s1" name="TelstraEnterprisePage" source="C:\Users\user\eclipse-workspace\AutomaitonRobot\Test\TelstraEnterprisePage.robot">
-<test id="s1-s1-s1-t1" name="load Teltra Enterprises page">
+<suite id="s1-s1-s1" name="CreateNewAccountPage" source="C:\Users\user\eclipse-workspace\AutomaitonRobot\Test\CreateNewAccountPage.robot">
+<test id="s1-s1-s1-t1" name="FaceBook Page CreateNew Account">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${Url}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20220413 17:54:22.864" level="INFO">Opening browser 'chrome' to base url 'https://www.telstra.com.au/'.</msg>
-<status status="PASS" starttime="20220413 17:54:22.864" endtime="20220413 17:54:28.645"></status>
+<msg timestamp="20220422 17:35:26.816" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20220422 17:35:26.815" endtime="20220422 17:35:30.194"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220413 17:54:28.645" endtime="20220413 17:54:28.777"></status>
+<status status="PASS" starttime="20220422 17:35:30.194" endtime="20220422 17:35:30.307"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20220413 17:54:38.785" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220413 17:54:28.777" endtime="20220413 17:54:38.785"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>XPath=/html/body/div[2]/div[2]/div/nav/ul[1]/li[3]/a/span</arg>
-</arguments>
-<msg timestamp="20220413 17:54:38.786" level="INFO">Clicking element 'XPath=/html/body/div[2]/div[2]/div/nav/ul[1]/li[3]/a/span'.</msg>
-<status status="PASS" starttime="20220413 17:54:38.785" endtime="20220413 17:54:38.893"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>${Delay}</arg>
-</arguments>
-<msg timestamp="20220413 17:54:48.899" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220413 17:54:38.893" endtime="20220413 17:54:48.900"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>XPath=//span[text()='Services']</arg>
-</arguments>
-<msg timestamp="20220413 17:54:48.903" level="INFO">Clicking element 'XPath=//span[text()='Services']'.</msg>
-<status status="PASS" starttime="20220413 17:54:48.901" endtime="20220413 17:54:48.994"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>${Delay}</arg>
-</arguments>
-<msg timestamp="20220413 17:54:59.000" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220413 17:54:48.994" endtime="20220413 17:54:59.001"></status>
+<msg timestamp="20220422 17:35:40.312" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220422 17:35:30.307" endtime="20220422 17:35:40.313"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
-<arg>xPath=//a[text()='Managed Networks']</arg>
+<arg>XPath=//a[text()='Create New Account']</arg>
 </arguments>
-<msg timestamp="20220413 17:54:59.004" level="INFO">Clicking link 'xPath=//a[text()='Managed Networks']'.</msg>
-<status status="PASS" starttime="20220413 17:54:59.002" endtime="20220413 17:55:04.973"></status>
+<msg timestamp="20220422 17:35:40.316" level="INFO">Clicking link 'XPath=//a[text()='Create New Account']'.</msg>
+<status status="PASS" starttime="20220422 17:35:40.314" endtime="20220422 17:35:40.382"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20220413 17:55:14.975" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220413 17:55:04.974" endtime="20220413 17:55:14.975"></status>
+<msg timestamp="20220422 17:35:50.390" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220422 17:35:40.383" endtime="20220422 17:35:50.391"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=firstname</arg>
+<arg>Suganthi</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.395" level="INFO">Typing text 'Suganthi' into text field 'name=firstname'.</msg>
+<status status="PASS" starttime="20220422 17:35:50.392" endtime="20220422 17:35:50.478"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=lastname</arg>
+<arg>J</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.479" level="INFO">Typing text 'J' into text field 'name=lastname'.</msg>
+<status status="PASS" starttime="20220422 17:35:50.478" endtime="20220422 17:35:50.539"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=reg_email__</arg>
+<arg>suganthistar2011@gmail.com</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.539" level="INFO">Typing text 'suganthistar2011@gmail.com' into text field 'name=reg_email__'.</msg>
+<status status="PASS" starttime="20220422 17:35:50.539" endtime="20220422 17:35:50.633"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=reg_email_confirmation__</arg>
+<arg>suganthistar2011@gmail.com</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.633" level="INFO">Typing text 'suganthistar2011@gmail.com' into text field 'name=reg_email_confirmation__'.</msg>
+<status status="PASS" starttime="20220422 17:35:50.633" endtime="20220422 17:35:50.717"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password_step_input</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.718" level="INFO">Typing password into text field 'id=password_step_input'.</msg>
+<msg timestamp="20220422 17:35:50.745" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220422 17:35:50.779" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220422 17:35:50.718" endtime="20220422 17:35:50.779"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>XPath=//label[text()='Female']</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.780" level="INFO">Clicking element 'XPath=//label[text()='Female']'.</msg>
+<status status="PASS" starttime="20220422 17:35:50.779" endtime="20220422 17:35:50.814"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>XPath=(//button[text()='Sign Up'])[1]</arg>
+</arguments>
+<msg timestamp="20220422 17:35:50.815" level="INFO">Clicking button 'XPath=(//button[text()='Sign Up'])[1]'.</msg>
+<status status="PASS" starttime="20220422 17:35:50.814" endtime="20220422 17:35:50.873"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
-<arg>filename=TeltraManagedNetwork.png</arg>
+<arg>filename=CreatePageFB.png</arg>
 </arguments>
-<msg timestamp="20220413 17:55:15.315" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TeltraManagedNetwork.png"&gt;&lt;img src="TeltraManagedNetwork.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220413 17:55:14.977" endtime="20220413 17:55:15.315"></status>
+<msg timestamp="20220422 17:35:51.090" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CreatePageFB.png"&gt;&lt;img src="CreatePageFB.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220422 17:35:50.874" endtime="20220422 17:35:51.091"></status>
 </kw>
-<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20220422 17:36:01.094" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220422 17:35:51.091" endtime="20220422 17:36:01.095"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220413 17:55:15.316" endtime="20220413 17:55:17.452"></status>
+<status status="PASS" starttime="20220422 17:36:01.096" endtime="20220422 17:36:03.186"></status>
 </kw>
 <doc>your test case document</doc>
-<status status="PASS" starttime="20220413 17:54:22.863" endtime="20220413 17:55:17.453" critical="yes"></status>
+<status status="PASS" starttime="20220422 17:35:26.813" endtime="20220422 17:36:03.186" critical="yes"></status>
 </test>
-<doc>your document</doc>
-<status status="PASS" starttime="20220413 17:54:22.629" endtime="20220413 17:55:17.455"></status>
+<status status="PASS" starttime="20220422 17:35:26.570" endtime="20220422 17:36:03.187"></status>
 </suite>
-<status status="PASS" starttime="20220413 17:54:22.627" endtime="20220413 17:55:17.457"></status>
+<status status="PASS" starttime="20220422 17:35:26.567" endtime="20220422 17:36:03.189"></status>
 </suite>
-<status status="PASS" starttime="20220413 17:54:22.609" endtime="20220413 17:55:17.459"></status>
+<status status="PASS" starttime="20220422 17:35:26.547" endtime="20220422 17:36:03.190"></status>
 </suite>
 <statistics>
 <total>
@@ -105,7 +143,7 @@
 <suite>
 <stat pass="1" fail="0" id="s1" name="AutomaitonRobot">AutomaitonRobot</stat>
 <stat pass="1" fail="0" id="s1-s1" name="Test">AutomaitonRobot.Test</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="TelstraEnterprisePage">AutomaitonRobot.Test.TelstraEnterprisePage</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="CreateNewAccountPage">AutomaitonRobot.Test.CreateNewAccountPage</stat>
 </suite>
 </statistics>
 <errors>
